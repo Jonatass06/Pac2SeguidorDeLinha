@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+@theme dark {
     --color-primary:oklch(0.52 0.1288 258.5);
     --color-background:oklch(0.32 0 0);
     --color-secondary:oklch(0.34 0 0);
@@ -12,22 +12,34 @@
     --color-detailsDarker:oklch(0.45 0 0)
 }
 
+@theme light {
+  --color-primary: oklch(0.75 0.15 258.5);        
+  --color-background: oklch(0.95 0 0);            
+  --color-secondary: oklch(0.9 0 0);              
+  --color-header: oklch(0.85 0 0);                
+  --color-foreground: oklch(0.88 0 0);            
+  --color-fontTitle: oklch(0.2 0 0);              
+  --color-fontText: oklch(0.3 0 0);               
+  --color-details: oklch(0.65 0 0);               
+  --color-detailsDarker: oklch(0.5 0 0);          
+}
+
 ::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
+  
   ::-webkit-scrollbar-track {
     background: none;
   }
 
-  /* Handle */
+  
   ::-webkit-scrollbar-thumb {
     background: #5555;
     border-radius: 100px;
   }
   
-  /* Handle on hover */
+  
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }

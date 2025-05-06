@@ -13,6 +13,10 @@ export default function Track() {
     [pathname]
   );
 
+  if(!subjectObject){
+    return
+  }
+
   return (
     <div className="flex w-2/6 text-fontText">
       {subjects.map((item, index) => (
