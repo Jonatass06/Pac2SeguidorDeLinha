@@ -30,7 +30,7 @@ export default function Main({
   }
   return (
     <>
-      <main className="w-full h-full flex overflow-auto">
+      <main className="w-full h-full flex overflow-auto pt-12">
         <section className="w-3/12 h-full flex justify-center">
           <LeftSideBar subject={subjectObject}></LeftSideBar>
         </section>
@@ -53,13 +53,13 @@ export default function Main({
             <div className="">
               {subjectObject?.subtitles?.map((subItem, index) => {
                 return (
-                  <div key={index} className="flex flex-col gap-10">
+                  <div key={index} id={subItem.slug} className="flex flex-col gap-10 scroll-mt-12">
                     <div className="text-3xl text-fontTitle">
                       {subItem.title}
                     </div>
                     <div className="text-fontText">
                       {subItem?.content.map((content, index) => (
-                        <div key={index} id={content.id}>{content.content}</div>
+                        <div key={index} id={content.id} className="scroll-mt-12">{content.content}</div>
                       ))}
                     </div>
                   </div>

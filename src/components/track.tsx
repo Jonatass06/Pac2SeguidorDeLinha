@@ -19,14 +19,14 @@ export default function Track() {
         <div key={index} className="flex items-center">
           {/* Dot container */}
           <div className="relative flex flex-col items-center">
-            <a
+            <motion.a
               href={item.slug}
-              className={`size-6 rounded-full ${
-                index >= subjectObject!.id ? "bg-details" : "bg-primary"
+              className={`rounded-full ${
+                index >= subjectObject!.id ? "bg-details size-3" : "bg-primary size-4"
               }`}
               onMouseEnter={() => setItemHovered(item.slug)}
               onMouseLeave={() => setItemHovered(null)}
-            ></a>
+            ></motion.a>
 
             {/* Tooltip */}
             <AnimatePresence>
@@ -48,7 +48,7 @@ export default function Track() {
           {/* Connector line */}
           {index !== subjects.length - 1 && (
             <div
-              className={`w-12 h-2 m-2 rounded-2xl ${
+              className={`w-20 h-1.5 m-2 rounded-2xl ${
                 index + 1 < subjectObject!.id ? "bg-primary" : "bg-details"
               }`}
             ></div>

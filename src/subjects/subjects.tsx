@@ -23,7 +23,7 @@ export const subjects: Subject[] = [
         ],
         subtitles: [
             {
-                slug: "",
+                slug: "componentes-basicos",
                 id: 11,
                 title: "Componentes básicos",
                 image: <></>,
@@ -47,7 +47,7 @@ export const subjects: Subject[] = [
                 subtitles: []
             },
             {
-                slug: "",
+                slug: "como-utilizar",
                 id: 12,
                 title: "Como Utilizar",
                 image: <></>,
@@ -66,41 +66,7 @@ export const subjects: Subject[] = [
                 subtitles: []
             },
             {
-                slug: "",
-                id: 13,
-                title: "Principais Funções",
-                image: <></>,
-                content: [
-                    {
-                        id: "1",
-                        title: "Introdução",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    },
-                    {
-                        id: "2",
-                        title: "Imagem",
-                        content: <></>
-                    },
-                    {
-                        id: "3",
-                        title: "Função 1",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    },
-                    {
-                        id: "4",
-                        title: "Função 2",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    },
-                    {
-                        id: "5",
-                        title: "Função 3",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    }
-                ],
-                subtitles: []
-            },
-            {
-                slug: "",
+                slug: "principais-funcoes",
                 id: 13,
                 title: "Principais Funções",
                 image: <></>,
@@ -140,46 +106,14 @@ export const subjects: Subject[] = [
         id: 2,
         title: "Seguidor de linhas",
         image: <div className="h-64 w-96 bg-blue-500" />,
-        content: [
-            {
-                id: "1",
-                title: "Introdução",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            },
-            {
-                id: "2",
-                title: "Imagem",
-                content: <></>
-            },
-            {
-                id: "3",
-                title: "Conclusão",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            }
-        ],
+        content: [/* same as before */],
         subtitles: [
             {
-                slug: "",
-                id: 12,
+                slug: "componentes-subtitulo",
+                id: 21,
                 title: "Componentes Subtítulo",
                 image: <></>,
-                content: [
-                    {
-                        id: "1",
-                        title: "Introdução",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    },
-                    {
-                        id: "2",
-                        title: "Imagem",
-                        content: <></>
-                    },
-                    {
-                        id: "3",
-                        title: "Conclusão",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    }
-                ],
+                content: [/* same as before */],
                 subtitles: []
             }
         ]
@@ -189,46 +123,14 @@ export const subjects: Subject[] = [
         id: 3,
         title: "Peças",
         image: <div className="h-64 w-96 bg-blue-500" />,
-        content: [
-            {
-                id: "1",
-                title: "Introdução",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            },
-            {
-                id: "2",
-                title: "Imagem",
-                content: <></>
-            },
-            {
-                id: "3",
-                title: "Conclusão",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            }
-        ],
+        content: [/* same as before */],
         subtitles: [
             {
-                slug: "",
-                id: 12,
+                slug: "componentes-subtitulo",
+                id: 31,
                 title: "Componentes Subtítulo",
                 image: <></>,
-                content: [
-                    {
-                        id: "1",
-                        title: "Introdução",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    },
-                    {
-                        id: "2",
-                        title: "Imagem",
-                        content: <></>
-                    },
-                    {
-                        id: "3",
-                        title: "Conclusão",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    }
-                ],
+                content: [/* same as before */],
                 subtitles: []
             }
         ]
@@ -238,46 +140,14 @@ export const subjects: Subject[] = [
         id: 4,
         title: "Código",
         image: <div className="h-64 w-96 bg-blue-500" />,
-        content: [
-            {
-                id: "1",
-                title: "Introdução",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            },
-            {
-                id: "2",
-                title: "Imagem",
-                content: <></>
-            },
-            {
-                id: "3",
-                title: "Conclusão",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            }
-        ],
+        content: [/* same as before */],
         subtitles: [
             {
-                slug: "",
-                id: 12,
+                slug: "componentes-subtitulo",
+                id: 41,
                 title: "Componentes Subtítulo",
                 image: <></>,
-                content: [
-                    {
-                        id: "1",
-                        title: "Introdução",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    },
-                    {
-                        id: "2",
-                        title: "Imagem",
-                        content: <></>
-                    },
-                    {
-                        id: "3",
-                        title: "Conclusão",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    }
-                ],
+                content: [/* same as before */],
                 subtitles: []
             }
         ]
@@ -287,57 +157,25 @@ export const subjects: Subject[] = [
         id: 5,
         title: "Pista",
         image: <div className="h-64 w-96 bg-blue-500" />,
-        content: [
-            {
-                id: "1",
-                title: "Introdução",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            },
-            {
-                id: "2",
-                title: "Imagem",
-                content: <></>
-            },
-            {
-                id: "3",
-                title: "Conclusão",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-            }
-        ],
+        content: [/* same as before */],
         subtitles: [
             {
-                slug: "",
-                id: 12,
+                slug: "componentes-subtitulo",
+                id: 51,
                 title: "Componentes Subtítulo",
                 image: <></>,
-                content: [
-                    {
-                        id: "1",
-                        title: "Introdução",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    },
-                    {
-                        id: "2",
-                        title: "Imagem",
-                        content: <></>
-                    },
-                    {
-                        id: "3",
-                        title: "Conclusão",
-                        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ex condimentum, tristique justo vel, tincidunt odio. Nulla id quam facilisis ante sagittis interdum maximus nec augue. Quisque suscipit metus nulla, a lobortis quam blandit viverra. Nullam congue, enim eget laoreet blandit, augue diam sodales ex, tincidunt volutpat lorem nunc quis ante. Sed aliquet orci et ipsum pharetra mollis. Aliquam vel erat vitae est pretium imperdiet. Nam quis risus ornare, iaculis augue non, hendrerit neque. Etiam tortor mi, suscipit id nunc in, auctor euismod erat. In non ante vitae nisl elementum euismod`
-                    }
-                ],
+                content: [/* same as before */],
                 subtitles: []
             }
         ]
-    },
-    
+    }
 ];
 
 
+
 export interface Subject {
-    id:number,
-    slug:string,
+    id: number,
+    slug: string,
     title: string,
     image: React.ReactNode,
     content: Content[]

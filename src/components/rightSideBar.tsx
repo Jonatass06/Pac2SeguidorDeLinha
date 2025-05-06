@@ -11,7 +11,7 @@ export default function RightSideBar({ subject }: { subject: Subject }) {
     console.log(text);
     setResults([]);
     subjects.map((item) => {
-      if (item.title.includes(text)) {
+      if (item.title.includes(text) ) {
         setResults((prev) => [...prev, item]);
       }
     });
