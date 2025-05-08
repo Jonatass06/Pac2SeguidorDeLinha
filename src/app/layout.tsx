@@ -6,8 +6,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-full h-full bg-background overflow-hidden">
-      <body className="w-full h-full">
+    <html lang="en" className=" overflow-hidden">
+      <body className="w-full h-full dark">
         <Header></Header>
         {children}
       </body>

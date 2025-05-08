@@ -18,7 +18,7 @@ export default function Track() {
   }
 
   return (
-    <div className="flex w-2/6 text-fontText">
+    <div className="flex w-2/6 text-fontTextLightMode">
       {subjects.map((item, index) => (
         <div key={index} className="flex items-center">
           {/* Dot container */}
@@ -26,7 +26,7 @@ export default function Track() {
             <motion.a
               href={item.slug}
               className={`rounded-full ${
-                index >= subjectObject!.id ? "bg-details size-3" : "bg-primary size-4"
+                index >= subjectObject!.id ? "bg-detailsLightMode size-3" : "bg-primaryLightMode size-4"
               }`}
               onMouseEnter={() => setItemHovered(item.slug)}
               onMouseLeave={() => setItemHovered(null)}
@@ -41,7 +41,7 @@ export default function Track() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-10 left-1/2 -translate-x-1/2 w-max min-w-16 h-8 flex justify-center items-center bg-black text-fontText p-2 rounded-2xl z-10"
+                  className="absolute top-10 left-1/2 -translate-x-1/2 w-max min-w-16 h-8 flex justify-center items-center bg-black text-fontTextLightMode p-2 rounded-2xl z-10"
                 >
                   {item.title}
                 </motion.div>
@@ -53,7 +53,7 @@ export default function Track() {
           {index !== subjects.length - 1 && (
             <div
               className={`w-20 h-1.5 m-2 rounded-2xl ${
-                index + 1 < subjectObject!.id ? "bg-primary" : "bg-details"
+                index + 1 < subjectObject!.id ? "bg-primaryLightMode" : "bg-detailsLightMode"
               }`}
             ></div>
           )}

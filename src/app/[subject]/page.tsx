@@ -30,7 +30,7 @@ export default function Main({
   }
   return (
     <>
-      <main className="w-full h-full flex overflow-auto pt-12">
+      <main className="w-full h-full flex overflow-auto pt-12 bg-backgroundLightMode dark:bg-backgroundDarkMode">
         <section className="w-3/12 h-full flex justify-center">
           <LeftSideBar subject={subjectObject}></LeftSideBar>
         </section>
@@ -39,13 +39,13 @@ export default function Main({
             <section className="w-full h-max flex justify-center gap-5">
               <div>{subjectObject?.image}</div>
               <div className="flex flex-col gap-4">
-                <h1 className="text-5xl text-fontTitle">
+                <h1 className="text-5xl text-fontTitleLightMode">
                   {subjectObject?.title}
                 </h1>
-                <div className="text-fontText h-max">{first.content}</div>
+                <div className="text-fontTextLightMode h-max">{first.content}</div>
               </div>
             </section>
-            <section className="text-fontText">
+            <section className="text-fontTextLightMode">
               {subjectObject?.content.map((content, index) => (
                 <div key={index}>{content.content}</div>
               ))}
@@ -54,10 +54,10 @@ export default function Main({
               {subjectObject?.subtitles?.map((subItem, index) => {
                 return (
                   <div key={index} id={subItem.slug} className="flex flex-col gap-10 scroll-mt-12">
-                    <div className="text-3xl text-fontTitle">
+                    <div className="text-3xl text-fontTitleLightMode">
                       {subItem.title}
                     </div>
-                    <div className="text-fontText">
+                    <div className="text-fontTextLightMode">
                       {subItem?.content.map((content, index) => (
                         <div key={index} id={content.id} className="scroll-mt-12">{content.content}</div>
                       ))}
