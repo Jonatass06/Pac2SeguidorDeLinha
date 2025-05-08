@@ -1,33 +1,40 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-primary:oklch(0.52 0.1288 258.5);
-    --color-background:oklch(0.32 0 0);
-    --color-secondary:oklch(0.34 0 0);
-    --color-header:oklch(0.28 0 0);
-    --color-foreground:oklch(0.3 0 0);
-    --color-fontTitle:oklch(0.84 0 0);
-    --color-fontText:oklch(0.75 0 0);
-    --color-details:oklch(0.59 0 0);
-    --color-detailsDarker:oklch(0.45 0 0)
+  --color-primaryLightMode: oklch(0.75 0.15 258.5);
+  --color-backgroundLightMode: oklch(0.95 0 0);
+  --color-secondaryLightMode: oklch(0.9 0 0);
+  --color-headerLightMode: oklch(0.85 0 0);
+  --color-foregroundLightMode: oklch(0.88 0 0);
+  --color-fontTitleLightMode: oklch(0.2 0 0);
+  --color-fontTextLightMode: oklch(0.3 0 0);
+  --color-detailsLightMode: oklch(0.65 0 0);
+  --color-detailsDarkerLightMode: oklch(0.5 0 0);
+  --color-primaryDarkMode: oklch(0.52 0.1288 258.5);
+  --color-backgroundDarkMode: oklch(0.32 0 0);
+  --color-secondaryDarkMode: oklch(0.34 0 0);
+  --color-headerDarkMode: oklch(0.28 0 0);
+  --color-foregroundDarkMode: oklch(0.3 0 0);
+  --color-fontTitleDarkMode: oklch(0.84 0 0);
+  --color-fontTextDarkMode: oklch(0.75 0 0);
+  --color-detailsDarkMode: oklch(0.59 0 0);
+  --color-detailsDarkerDarkMode: oklch(0.45 0 0);
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: none;
-  }
+  width: 10px;
+}
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #5555;
-    border-radius: 100px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5555;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
