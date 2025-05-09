@@ -31,11 +31,11 @@ export default function SearchInput() {
   return (
     <div className="flex w-11/12 flex-col items-center justify-center mt-6 gap-2">
       <div className="flex w-full items-center justify-center">
-        <div className="bg-secondaryLightMode rounded-l-2xl h-10 flex items-center p-4 ">
+        <div className="bg-secondaryLightMode dark:bg-secondaryDarkMode rounded-l-2xl h-10 flex items-center p-4 ">
           <Magnifier />
         </div>
         <input
-          className="text-fontTextLightMode w-10/12 bg-secondaryLightMode rounded-r-2xl h-10 outline-none"
+          className="text-fontTextLightMode dark:text-fontTextDarkMode w-10/12 bg-secondaryLightMode dark:bg-secondaryDarkMode rounded-r-2xl h-10 outline-none"
           placeholder="Pesquisar"
           value={inputValue}
           onChange={(e) => {
@@ -51,11 +51,14 @@ export default function SearchInput() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="bg-secondaryLightMode w-10/12 max-h-36 p-2 flex flex-col gap-2 overflow-auto pl-2 rounded-b-2xl"
+            className="bg-secondaryLightMode dark:bg-secondaryDarkMode w-10/12 max-h-36 p-2 flex flex-col gap-2 overflow-auto pl-2 rounded-b-2xl absolute mt-48"
           >
             {results.map((item, index) => {
               return (
-                <div key={index} className="text-fontTextLightMode flex flex-col">
+                <div
+                  key={index}
+                  className="text-fontTextLightMode dark:text-fontTextDarkMode flex flex-col"
+                >
                   <a
                     href={
                       verifyIfHasParent(item)
