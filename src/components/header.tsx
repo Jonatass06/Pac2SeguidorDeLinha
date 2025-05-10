@@ -6,6 +6,7 @@ import MapIcon from "../../public/mapIcon";
 import Track from "./track";
 import ThemeContext from "@/context/ThemeContext";
 import TrackComponent from "./track";
+import Steps from "./steps";
 
 export default function Header() {
   const { theme } = useContext(ThemeContext);
@@ -14,7 +15,7 @@ export default function Header() {
     <>
       <nav
         className={
-          "w-full h-12 bg-headerLightMode dark:bg-headerDarkMode flex items-center justify-center fixed top-0 " +
+          "w-full h-12 bg-headerLightMode dark:bg-headerDarkMode flex items-center justify-center fixed top-0 z-10 " +
           theme
         }
       >
@@ -26,17 +27,20 @@ export default function Header() {
         </div>
         <div
           className="w-1/6 flex justify-center cursor-pointer"
-          onClick={() => setIsOpen(true)}
+          onClick={() => setIsOpen(!isOpen)}
         >
           <MapIcon></MapIcon>
         </div>
       </nav>
-
       {isOpen && (
-        <div className="h-full flex items-end">
-          <TrackComponent />
-        </div>
+          <>
+          <Steps />
+          <Steps />
+          <Steps />
+          <Steps />
+          </>
       )}
+
     </>
   );
 }

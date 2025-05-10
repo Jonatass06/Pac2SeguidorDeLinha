@@ -4,6 +4,7 @@ import React, { use, useContext, useEffect, useMemo, useState } from "react";
 import LeftSideBar from "../../components/leftSideBar";
 import RightSideBar from "../../components/rightSideBar";
 import ThemeContext from "@/context/ThemeContext";
+import Steps from "@/components/steps";
 
 export default function Main({
   params,
@@ -34,6 +35,7 @@ export default function Main({
           theme
         }
       >
+
         <section className="w-3/12 h-full flex justify-center">
           <LeftSideBar subject={subjectObject}></LeftSideBar>
         </section>
@@ -53,15 +55,15 @@ export default function Main({
             <section className={"text-fontTextLightMode dark:text-fontTextDarkMode "+ fontContent}>
               {subjectObject?.content.map((content, index) => (
                 <div key={index}>{content.content}</div>
-              ))}
+                ))}
             </section>
             <div className="">
               {subjectObject?.subtitles?.map((subItem, index) => {
                 return (
                   <div
-                    key={index}
-                    id={subItem.slug}
-                    className="flex flex-col gap-10 scroll-mt-12 "
+                  key={index}
+                  id={subItem.slug}
+                  className="flex flex-col gap-10 scroll-mt-12 "
                   >
                     <div className={"text-fontTitleLightMode dark:text-fontTitleDarkMode pt-4 "+fontSubTitle}>
                       {subItem.title}
@@ -69,9 +71,9 @@ export default function Main({
                     <div className={"text-fontTextLightMode dark:text-fontTextDarkMode " + fontContent}>
                       {subItem?.content.map((content, index) => (
                         <div
-                          key={index}
-                          id={content.id}
-                          className="scroll-mt-12 flex flex-col"
+                        key={index}
+                        id={content.id}
+                        className="scroll-mt-12 flex flex-col"
                         >
                           <div className="pt-2 pb-2 text-fontTitleLightMode dark:text-fontTitleDarkMode">{content.title}</div>
                           <div>{content.content}</div>

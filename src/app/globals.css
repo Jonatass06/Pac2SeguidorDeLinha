@@ -21,6 +21,9 @@
   --color-detailsDarkMode: oklch(0.59 0 0);
   --color-detailsDarkerDarkMode: oklch(0.45 0 0);
 }
+* {
+  box-sizing: border-box;
+}
 
 ::-webkit-scrollbar {
   width: 10px;

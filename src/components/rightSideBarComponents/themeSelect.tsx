@@ -6,14 +6,25 @@ import DownArrow from "../../../public/downArrowIcon";
 import { AnimatePresence, motion } from "motion/react";
 
 export default function ThemeSelect() {
-  const { setTheme } = useContext(ThemeContext);
+  const { setTheme, theme } = useContext(ThemeContext);
   const [choosenTheme, setChoosenTheme] = useState("Modo Escuro");
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-11/12 h-full">
       <div className="flex flex-col w-full justify-center text-fontTextLightMode dark:text-fontTextDarkMode gap-2 items-center">
         <div className="flex w-full items-center gap-6 justify-center">
-          <ChangeColor />
+          <button className="cursor-pointer" onClick={() => {            
+            if (choosenTheme == "Modo Escuro") {
+              setChoosenTheme("Modo Claro");
+              setTheme("");
+            } else {
+              setChoosenTheme("Modo Escuro");
+              setTheme("dark");
+            }
+            setIsOpen(false);
+          }}>
+            <ChangeColor />
+          </button>
           <button
             className="flex items-center w-10/12 bg-secondaryLightMode dark:bg-secondaryDarkMode p-2 rounded-sm justify-center"
             onClick={() => setIsOpen(!isOpen)}
