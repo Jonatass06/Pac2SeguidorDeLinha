@@ -8,9 +8,10 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
   const [fontContent, setFontContent] = useState("text-md");
   const [fontTitle, setFontTitle] = useState("text-5xl");
   const [fontSubTitle, setFontSubTitle] = useState("text-3xl");
+    const [scrolled, setScrolled] = useState(false);
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, fontContent, setFontContent, fontTitle, setFontTitle, fontSubTitle, setFontSubTitle }}>
+    <ThemeContext.Provider value={{ theme, setTheme, fontContent, setFontContent, fontTitle, setFontTitle, fontSubTitle, setFontSubTitle, scrolled, setScrolled }}>
       {children}
     </ThemeContext.Provider>
   );

@@ -18,7 +18,7 @@ export default function Track() {
   }
 
   return (
-    <div className="flex w-2/6 text-fontTextLightMode dark:text-fontTextDarkMode">
+    <div className="flex text-fontTextLightMode dark:text-fontTextDarkMode">
       {subjects.map((item, index) => (
         <div key={index} className="flex items-center">
           {/* Dot container */}
@@ -52,7 +52,7 @@ export default function Track() {
           {/* Connector line */}
           {index !== subjects.length - 1 && (
             <div
-              className={`w-20 h-1.5 m-2 rounded-2xl ${
+              className={`2xl:w-20 xl:w-14 lg:w-8 md:w-10 sm:w-8 w-6 h-1.5 m-2 rounded-2xl ${
                 index + 1 < subjectObject!.id ? "bg-primaryLightMode dark:bg-primaryDarkMode" : "bg-detailsLightMode dark:bg-detailsDarkMode"
               }`}
             ></div>

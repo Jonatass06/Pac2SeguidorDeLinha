@@ -29,9 +29,9 @@ export default function SearchInput() {
   }
 
   return (
-    <div className="flex w-11/12 flex-col items-center justify-center mt-6 gap-2">
+    <div className="flex lg:w-11/12 w-0 flex-col items-center justify-center mt-6 gap-2">
       <div className="flex w-full items-center justify-center">
-        <div className="bg-secondaryLightMode dark:bg-secondaryDarkMode rounded-l-2xl h-10 flex items-center p-4 ">
+        <div className="bg-secondaryLightMode dark:bg-secondaryDarkMode rounded-l-2xl h-10 flex items-center lg:p-4 ">
           <Magnifier />
         </div>
         <input

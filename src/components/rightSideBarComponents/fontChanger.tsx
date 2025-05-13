@@ -27,12 +27,12 @@ export default function FontChanger() {
   const [tamFont, setTamFont] = useState(indexOfActualFont);
 
   return (
-    <div className="w-11/12 h-full">
+    <div className="lg:w-11/12 w-0 h-full">
       <div className="flex w-full justify-center text-fontTextLightMode dark:text-fontTextDarkMode gap-6 items-center">
         <FontIcon />
-        <div className="flex items-center w-10/12 bg-secondaryLightMode dark:bg-secondaryDarkMode p-4 rounded-sm justify-center">
+        <div className="flex items-center w-10/12 bg-secondaryLightMode dark:bg-secondaryDarkMode lg:p-4 rounded-sm justify-center">
           <button
-            className="flex items-center justify-center h-2 p-2 cursor-pointer"
+            className="flex items-center justify-center h-2 lg:p-2 cursor-pointer"
             onClick={() => {
               if (fontsList.indexOf(fontContent) - 1 >= 0) {
                 setFontContent(fontsList[fontsList.indexOf(fontContent) - 1]);
@@ -50,7 +50,7 @@ export default function FontChanger() {
           >
             -
           </button>
-          <div className="w-9/12 rounded-full h-2 flex items-center">
+          <div className="lg:w-9/12 rounded-full h-2 flex items-center">
             <input
               type="range"
               min="0"
@@ -63,11 +63,11 @@ export default function FontChanger() {
                 setFontSubTitle(fontsList[value + 4]);
                 setFontTitle(fontsList[value + 6]);
               }}
-              className="w-full accent-primaryLightMode dark:accent-primaryDarkMode"
+              className="lg:w-full w-0 lg:accent-primaryLightMode lg:dark:accent-primaryDarkMode "
             />
           </div>
           <button
-            className="flex items-center justify-center h-2 p-2 cursor-pointer"
+            className="flex items-center justify-center h-2 lg:p-2 cursor-pointer"
             onClick={() => {
               if (fontsList.indexOf(fontContent) + 1 < fontsList.length - 6) {
                 setFontContent(fontsList[fontsList.indexOf(fontContent) + 1]);
