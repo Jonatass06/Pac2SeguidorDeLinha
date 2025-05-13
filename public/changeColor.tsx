@@ -1,8 +1,7 @@
 export default function ChangeColor() {
   return (
     <svg
-      width="16"
-      height="16"
+    className="lg:w-[16px] w-0 h-[16px]"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

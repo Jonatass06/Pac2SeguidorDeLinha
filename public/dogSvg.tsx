@@ -1,8 +1,7 @@
 export default function DogSvg() {
   return (
     <svg
-      width="258"
-      height="155"
+    className="h-[155px] lg:w-[258px] w-0"
       viewBox="0 0 258 155"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

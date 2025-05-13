@@ -9,6 +9,8 @@ const ThemeContext = createContext<{
   setFontTitle: React.Dispatch<React.SetStateAction<string>>;
   fontSubTitle: string;
   setFontSubTitle: React.Dispatch<React.SetStateAction<string>>;
+  scrolled: boolean;
+  setScrolled: React.Dispatch<React.SetStateAction<boolean>>;
 }>({
   theme: "dark",
   setTheme: () => {},
@@ -17,7 +19,9 @@ const ThemeContext = createContext<{
   fontTitle: "text-5xl",
   setFontTitle: () => {},
   fontSubTitle: "text-3xl",
-  setFontSubTitle: ()=>{}
+  setFontSubTitle: ()=>{},
+  scrolled:true,
+  setScrolled: ()=>{}
 });
 
 export default ThemeContext;

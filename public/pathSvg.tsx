@@ -1,8 +1,7 @@
 export default function PathSvg() {
   return (
     <svg
-      width="326"
-      height="500"
+    className="2xl:w-[326px] h-[500px] xl:w-[300px] lg:w-[326px] w-0"
       viewBox="0 0 326 504"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

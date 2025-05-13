@@ -3,7 +3,7 @@ import React from "react";
 
 export default function LeftSideBar({ subject }: { subject: Subject }) {
   return (
-    <div className="h-11/12 w-96 bg-foregroundLightMode dark:bg-foregroundDarkMode border-2 border-detailsDarkerLightMode dark:border-detailsDarkerDarkMode rounded-lg mt-3 fixed overflow-auto">
+    <div className="h-11/12 2xl:w-96 xl:w-80 w-0 bg-foregroundLightMode dark:bg-foregroundDarkMode border-2 border-detailsDarkerLightMode dark:border-detailsDarkerDarkMode rounded-lg mt-3 fixed overflow-auto">
       {subject?.subtitles?.map((item, index) => {
         return (
           <div key={index} className="pt-6 pl-4 flex flex-col gap-6 mb-10">
