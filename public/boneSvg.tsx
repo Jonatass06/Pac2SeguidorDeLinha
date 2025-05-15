@@ -5,6 +5,7 @@ export interface BoneProps {
 export default function BoneSvg(props: BoneProps) {
   return (
     <svg
+      // className="w-[8vw]"
       width="188"
       height="104"
       viewBox="0 0 188 104"

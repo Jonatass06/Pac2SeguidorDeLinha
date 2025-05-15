@@ -90,7 +90,7 @@ export default function Main({
               </h1>
               <div
                 className={
-                  "text-fontTextLightMode dark:text-fontTextDarkMode text-md h-max " +
+                  "text-fontTextLightMode dark:text-fontTextDarkMode text-justify text-md h-max " +
                   fontContent
                 }
               >
@@ -100,7 +100,7 @@ export default function Main({
           </section>
           <section
             className={
-              "text-fontTextLightMode dark:text-fontTextDarkMode " + fontContent
+              "text-fontTextLightMode dark:text-fontTextDarkMode text-justify " + fontContent
             }
           >
             {subjectObject?.content.map((content, index) => (
@@ -113,7 +113,7 @@ export default function Main({
                 <div
                   key={index}
                   id={subItem.slug}
-                  className="flex flex-col gap-10 scroll-mt-12 "
+                  className="flex flex-col gap-10 scroll-mt-12 text-justify "
                 >
                   <div
                     className={

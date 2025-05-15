@@ -28,7 +28,7 @@ export default function FontChanger() {
 
   return (
     <div className="lg:w-11/12 w-0 h-full">
-      <div className="flex w-full justify-center text-fontTextLightMode dark:text-fontTextDarkMode gap-6 items-center">
+      <div className="flex w-full justify-center *:fill-fontTextLightMode dark:*:fill-fontTextDarkMode gap-6 items-center">
         <FontIcon />
         <div className="flex items-center w-10/12 bg-secondaryLightMode dark:bg-secondaryDarkMode lg:p-4 rounded-sm justify-center">
           <button
