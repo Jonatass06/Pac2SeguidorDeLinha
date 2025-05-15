@@ -13,7 +13,7 @@ export default function ThemeSelect() {
     <div className="w-11/12 h-full">
       <div className="flex flex-col w-full justify-center text-fontTextLightMode dark:text-fontTextDarkMode gap-2 items-center">
         <div className="flex w-full items-center gap-6 justify-center">
-          <button className="cursor-pointer" onClick={() => {            
+          <button className="cursor-pointer *:fill-fontTextLightMode dark:*:fill-fontTextDarkMode" onClick={() => {            
             if (choosenTheme == "Modo Escuro") {
               setChoosenTheme("Modo Claro");
               setTheme("");

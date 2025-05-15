@@ -1,6 +1,7 @@
 export default function BoneSvg() {
   return (
     <svg
+      // className="w-[8vw]"
       width="188"
       height="104"
       viewBox="0 0 188 104"
