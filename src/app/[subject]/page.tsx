@@ -69,8 +69,8 @@ export default function Main({
       </section>
       <section className="xl:w-6/12 lg:w-9/12 w-full flex justify-center pt-4">
         <section className="w-10/12 flex flex-col gap-10">
-          <section className="w-full h-max flex justify-center gap-5">
-            <div>{subjectObject?.image}</div>
+          <section className="w-full h-max flex sm:flex-wrap xl:flex-nowrap justify-center gap-5">
+            <div className="" >{subjectObject?.image}</div>
             <div className="flex flex-col gap-4">
               <h1
                 className={
@@ -82,7 +82,7 @@ export default function Main({
               </h1>
               <div
                 className={
-                  "text-fontTextLightMode dark:text-fontTextDarkMode text-md h-max " +
+                  "text-fontTextLightMode dark:text-fontTextDarkMode text-justify text-md h-max " +
                   fontContent
                 }
               >
@@ -92,7 +92,7 @@ export default function Main({
           </section>
           <section
             className={
-              "text-fontTextLightMode dark:text-fontTextDarkMode " + fontContent
+              "text-fontTextLightMode dark:text-fontTextDarkMode text-justify " + fontContent
             }
           >
             {subjectObject?.content.map((content, index) => (
@@ -105,7 +105,7 @@ export default function Main({
                 <div
                   key={index}
                   id={subItem.slug}
-                  className="flex flex-col gap-10 scroll-mt-12 "
+                  className="flex flex-col gap-10 scroll-mt-12 text-justify "
                 >
                   <div
                     className={
