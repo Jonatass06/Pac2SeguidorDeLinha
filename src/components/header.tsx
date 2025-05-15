@@ -22,7 +22,7 @@ export default function Header() {
                 theme
               }
             >
-              <div className="w-1/6 flex justify-center">
+              <div className="w-1/6 flex justify-center z-50">
                 <Logo></Logo>
               </div>
               <div className="w-4/6 flex justify-center">
@@ -48,18 +48,18 @@ export default function Header() {
             </motion.nav>
           </div>
         ) : (
-          <div className="lg:w-9/12 xl-w-full w-full h-32 flex justify-center items-center absolute">
+          <div className="lg:w-9/12 xl:w-11/12 w-full h-32 flex justify-center items-center absolute">
             <motion.nav
               className={
-                "lg:w-6/12 md:w-7/12 sm:w-10/12 w-11/12  h-16 flex items-center justify-center z-10 rounded-full " +
+                "lg:w-6/12 md:w-7/12 sm:w-10/12 w-full h-16 flex items-center justify-end z-10 rounded-full " +
                 theme
               }
             >
-              <div className="w-full h-16 flex justify-center backdrop-blur rounded-full bg-[#cecece] dark:bg-[#29292999]">
+              <div className="xl:w-11/12 w-full h-16 flex justify-center backdrop-blur rounded-full bg-[#cecece] dark:bg-[#29292999]">
                 <Track></Track>
               </div>
               <div
-                className="absolute lg:w-6/12 md:w-7/12 sm:w-10/12 w-11/12 flex justify-end cursor-pointer pr-2"
+                className="absolute w-1/12 flex justify-end cursor-pointer pr-2"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <div className="bg-primaryLightMode dark:bg-primaryDarkMode sm:p-3 p-1.5 rounded-full">

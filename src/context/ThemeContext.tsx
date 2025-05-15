@@ -1,3 +1,4 @@
+import { Subject, subjects } from "@/subjects/subjects";
 import { createContext } from "react";
 
 const ThemeContext = createContext<{
@@ -11,6 +12,8 @@ const ThemeContext = createContext<{
   setFontSubTitle: React.Dispatch<React.SetStateAction<string>>;
   scrolled: boolean;
   setScrolled: React.Dispatch<React.SetStateAction<boolean>>;
+  actualSubject: Subject;
+  setActualObject: React.Dispatch<React.SetStateAction<Subject>>;
 }>({
   theme: "dark",
   setTheme: () => {},
@@ -21,7 +24,9 @@ const ThemeContext = createContext<{
   fontSubTitle: "text-3xl",
   setFontSubTitle: ()=>{},
   scrolled:true,
-  setScrolled: ()=>{}
+  setScrolled: ()=>{},
+  actualSubject: subjects[0],
+  setActualObject: ()=>{}
 });
 
 export default ThemeContext;

@@ -1,8 +1,7 @@
 export default function PathSteps() {
   return (
     <svg
-      width="1312"
-      height="793"
+    className="2xl:w-[1312px] 2xl:h-[793px] rela"
       viewBox="0 0 1312 793"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
