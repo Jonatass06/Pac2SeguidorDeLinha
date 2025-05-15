@@ -21,8 +21,15 @@ export default function Main({
   const scrollRef = useRef<HTMLElement | null>(null);
   const [scrollPos, setScrollPos] = useState(0);
   const [mounted, setMounted] = useState(false);
-  const { theme, fontContent, fontSubTitle, fontTitle, setScrolled, scrolled } =
-    useContext(ThemeContext);
+  const {
+    theme,
+    fontContent,
+    fontSubTitle,
+    fontTitle,
+    setScrolled,
+    scrolled,
+    setActualObject,
+  } = useContext(ThemeContext);
   useEffect(() => {
     if (!mounted || !scrollRef.current) return;
 
@@ -37,9 +44,6 @@ export default function Main({
 
     return () => scrollElement.removeEventListener("scroll", handleScroll);
   }, [mounted, setScrolled]);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
   const { subject } = use(params);
   console.log(subject);
 
@@ -47,6 +51,10 @@ export default function Main({
     () => subjects.find((s) => s.slug == subject),
     [subject]
   );
+  useEffect(() => {
+    setMounted(true);
+    setActualObject(subjectObject!);
+  }, [setActualObject, subjectObject]);
   const first = useMemo(() => subjectObject?.content[0], [subjectObject]);
   if (!mounted || !subjectObject || !first) {
     return null;
@@ -69,8 +77,8 @@ export default function Main({
       </section>
       <section className="xl:w-6/12 lg:w-9/12 w-full flex justify-center pt-4">
         <section className="w-10/12 flex flex-col gap-10">
-          <section className="w-full h-max flex sm:flex-wrap xl:flex-nowrap justify-center gap-5">
-            <div className="" >{subjectObject?.image}</div>
+          <section className="w-full h-max flex sm:flex-row flex-col justify-center gap-5">
+            <div>{subjectObject?.image}</div>
             <div className="flex flex-col gap-4">
               <h1
                 className={
@@ -140,7 +148,7 @@ export default function Main({
           </div>
         </section>
       </section>
-      <section className="xl:w-3/12 lg:w-4/12 w-0 flex justify-center">
+      <section className="xl:w-3/12 lg:w-4/12 hidden lg:flex  justify-center">
         <RightSideBar></RightSideBar>
       </section>
     </motion.main>
