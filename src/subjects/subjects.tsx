@@ -13,7 +13,7 @@ export const subjects: Subject[] = [
       {
         id: "2",
         title: "Image",
-        content: <img src="/images/components-overview.png" alt="Line-following robot components" />,
+        content: <></>,
       },
       {
         id: "3",
@@ -36,7 +36,7 @@ export const subjects: Subject[] = [
           {
             id: "2",
             title: "Image",
-            content: <img src="/images/basic-components.png" alt="Basic components" />,
+            content: <></>,
           },
           {
             id: "3",
@@ -60,7 +60,7 @@ export const subjects: Subject[] = [
           {
             id: "2",
             title: "Image",
-            content: <img src="/images/assembly-guide.png" alt="Assembly process" />,
+            content: <></>,
           },
         ],
         subtitles: [],
@@ -79,7 +79,7 @@ export const subjects: Subject[] = [
           {
             id: "2",
             title: "Image",
-            content: <img src="/images/function-diagram.png" alt="Component functions" />,
+            content: <></>,
           },
           {
             id: "3",

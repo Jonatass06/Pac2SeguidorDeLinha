@@ -6,7 +6,7 @@ import DownArrow from "../../../public/downArrowIcon";
 import { AnimatePresence, motion } from "motion/react";
 
 export default function ThemeSelect() {
-  const { setTheme, theme } = useContext(ThemeContext);
+  const { setTheme } = useContext(ThemeContext);
   const [choosenTheme, setChoosenTheme] = useState("Modo Escuro");
   const [isOpen, setIsOpen] = useState(false);
   return (

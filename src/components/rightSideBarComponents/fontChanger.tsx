@@ -27,7 +27,7 @@ export default function FontChanger() {
   const [tamFont, setTamFont] = useState(indexOfActualFont);
 
   return (
-    <div className="lg:w-11/12 w-0 h-full">
+    <div className="lg:w-11/12 w-0 h-full z-10">
       <div className="flex w-full justify-center *:fill-fontTextLightMode dark:*:fill-fontTextDarkMode gap-6 items-center">
         <FontIcon />
         <div className="flex items-center w-10/12 bg-secondaryLightMode dark:bg-secondaryDarkMode lg:p-4 rounded-sm justify-center">

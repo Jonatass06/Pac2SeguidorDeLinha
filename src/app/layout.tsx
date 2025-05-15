@@ -1,7 +1,6 @@
 import Header from "@/components/header";
 import "./globals.css";
 import ThemeProvider from "@/context/ThemeProvider";
-import Steps from "@/components/steps";
 export default function RootLayout({
   children,
 }: Readonly<{
